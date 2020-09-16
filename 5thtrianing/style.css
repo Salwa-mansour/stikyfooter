@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+footer{
+    background-color: rgb(58, 58, 58);
+    font-family: 'lato',sans-serif;
+    line-height: 1.5;
+}
+.ft-title{
+    color:#fff ;
+    font-family:'merriweather',serif ;
+    padding-bottom: 0.625rem;
+    font-size: 1.325rem;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+a{
+    text-decoration: none;
+    color:#eee ;
+}
+a:hover{
+    text-decoration: underline;
+}
+.ft-main{
+    display: flex;
+    padding:1.25rem 1.875rem ;
+    flex-wrap: wrap;
+}
+.ft-main-item{
+    padding:1.25rem ;
+    min-width: 200px;
+
+}
+@media screen and (min-width:477px){
+    .ft-main{
+        justify-content:space-around;
+    }
+}
+@media screen and (min-width:1200px){
+    .ft-main{
+        justify-content: space-evenly;
+    }
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+}
+input[type="email"]{
+    padding:0.635rem ;
+    margin-top: 0.3125rem;
+    border: 0;
+}
+input[type="submit"]{
+    background: #00d188;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625rem 0.9375rem;
+    margin-top: 0.3125rem;
+}
+.ft-social{
+    padding:0 1.875rem 1.25rem ;
+}
+.ft-social-list{
+    padding-top:1.25rem ;
+    border-top: 1px #777 solid;
+    display: flex;
+    justify-content: center;
+}
+.ft-social-list li{
+    margin: 0.5rem;
+    font-size: 1.25rem;
+}
+.ft-legal{
+    background-color:#333 ;
+    padding: 0.9375rem 1.875rem;
+}
+.ft-legal-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.ft-legal-list li{
+    margin: .125rem .625rem;
+    white-space: nowrap;
+}
+
+.ft-legal-list li:nth-last-child(2)
+{
+    flex: 1;
+}
