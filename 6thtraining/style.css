@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+footer{
+    text-transform: capitalize;
+    background-color: rgb(58, 58, 58);
+    color: #bbb;
+    line-height: 1.5;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+footer a{
+    color: #eee;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+.ft-title{
+    padding-bottom: .635rem;
+    color: #fff;
+    font-size: 1.375rem;
+}
+.ft-main{
+    display: flex;
+    padding: 1.25rem;
+    flex-wrap: wrap;
+}
+.ft-main-item{
+    padding: 1.25rem;
+    min-width: 200px;
+}
+
+@media screen and (min-width:477px){
+    .ft-main{
+        justify-content: space-around;
+    }
+}
+@media screen and (min-width:1240px){
+    .ft-main{
+        justify-content: space-evenly;
+    }
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+}
+input[type="email"]{
+    padding: 0.625rem;
+    margin-top:.3125rem;
+    border: 0;
+}
+input[type="submit"]{
+    padding: 0.625rem;
+    margin-top:.3125rem;
+    border: 0;
+    background: #00d188;
+    color: #fff;
+    cursor: pointer;
+}
+/* ///////////// */
+.ft-social{
+    padding: 0 1.875rem 1.25rem;
+}
+.ft-social-list{
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid;
+    padding-top: 1.25rem;
+}
+.ft-social-list li{
+    margin: 0.5rem;
+    font-size: 1.25rem;
+}
+/* ///////////// */
+.ft-legal{
+    padding: 0.9375rem 1.875rem;
+    background: #333;
+}
+.ft-legal-list{
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
+.ft-legal-list li{
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+}
+.ft-legal-list li:nth-last-child(2){
+    flex: 1;
+}
+
+}
