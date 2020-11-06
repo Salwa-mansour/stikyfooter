@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lato',sans-serif;
+    text-transform: capitalize;
+}
+footer{
+    background: rgb(78, 78, 78);
+    line-height: 1.5;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+footer a{
+    color: #eee;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+.ft-title{
+    font-family: 'merriweather' , serif;
+    color: #fff;
+    font-size: 1.375rem;
+    padding-bottom: .625rem;
+}
+/* ------------------main footer styling-------------- */
+.ft-main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.25rem 1.875rem;
+}
+.ft-main-item{
+    min-width: 200px;
+  
+    /* padding: 1.25rem; */
+    /*instead of padding 1.25rem becuas i need space from out side some times win i have borders so i need to exprimetn than here to see the efficet of it*/
+    margin: 1rem;
+    padding:.5rem;
+    background-color: orange;
+}
+@media screen and (min-width:477px){
+    .ft-main{
+        justify-content: space-around;
+    }
+}
